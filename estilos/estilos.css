@@ -1,0 +1,279 @@
+@import url(variables.css);
+
+* {
+    font-family: var(--main-font);
+}
+
+/* HEADER SECTION */
+
+header{
+    position: relative;
+}
+
+#logo{
+    background: url(../imagenes/logo.svg);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    z-index: 1;
+    font-size: 0;
+}
+
+nav {
+    background-color: var(--main-color);
+}
+
+#navbarNav{
+    justify-content: flex-end !important;
+}
+
+.nav-link{
+    color: var(--secondary-color);
+}
+
+/* NOSOTROS SECTION */
+
+.titulo{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* PLANES SECCION */
+
+.lista-planes{
+    list-style: none;
+}
+
+/* SECCION SERVICIOS */
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedor-servicios p {
+    width: 90%;
+    margin: 5vw auto;
+}
+
+.contenedor-servicios div img {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.contenedor-servicios div h4 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    margin: 5vw;
+}
+
+.boton-mas,
+.boton-menos {
+    background-color: var(--main-color);
+    padding: 5px 8px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 8px;
+    margin-left: 5vw;
+    max-width: 100px;
+    text-align: center;
+}
+
+#yoga:target {
+    display: none;
+}
+
+#yoga:target~.boton-menos {
+    display: block;
+}
+
+#yoga:target~#yoga-texto {
+    display: block;
+}
+
+#nutricion:target {
+    display: none;
+}
+
+#nutricion:target~.boton-menos {
+    display: block;
+}
+
+#nutricion:target~#nutricion-texto {
+    display: block;
+}
+
+#astrologia:target {
+    display: none;
+}
+
+#astrologia:target~.boton-menos {
+    display: block;
+}
+
+#astrologia:target~#astrologia-texto {
+    display: block;
+}
+
+.contenedor-servicios div p,
+.boton-menos {
+    display: none;
+}
+
+.icono-yoga {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/flor_loto.png);
+}
+
+.icono-nutricion {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/om.png);
+}
+
+.icono-astrologia {
+    width: 100%;
+    width: 100%;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/yinyang.png);
+}
+
+.button {
+    width: 100%;
+    max-width: 200px;
+}
+
+.button input {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    border: none;
+    transition: 0.5s;
+}
+
+.button input:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 14px 17px -11px #E3C08B
+}
+
+/* BACKGROUND SECTION */
+
+.background{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 30px;
+    background-image: url(../imagenes/background_desktop.jpg);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: 10px;
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li a {
+    display: block;
+    margin: 15px 5px;
+}
+
+.redes-sociales li a img {
+    width: 30px;
+    transition: 1s;
+}
+
+.redes-sociales li a img:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 991px){
+    #logo {
+        left: calc(50% - 40px);
+    }
+
+    .menu-links{
+        margin-top: 30px;
+    }
+    .background {
+        background-image: url('../imagenes/background_mobile.jpg');
+    }
+}
+
+@media screen and (min-width: 741px){
+    /* SERVICIOS SECTION */
+    #yoga,
+    #nutricion,
+    #astrologia {
+        display: none;
+    }
+
+    .contenedor-servicios div p {
+        display: block;
+    }
+
+    .servicio1,
+    .servicio2,
+    .servicio3 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .servicio1,
+    .servicio3 {
+        flex-direction: row-reverse;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    .contenedor-servicios div picture {
+        width: 45%;
+        height: auto;
+    }
+
+
+}

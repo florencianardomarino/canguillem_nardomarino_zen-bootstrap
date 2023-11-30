@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefanía Canguillem y Florencia Nardomarino | Diseño Multimedial | DMT2AV | Modalidad Virtual | Turno
+        tarde | Año 2023</title>
+    <link rel="icon" href="./imagenes/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header class="container-fluid fixed-top">
+        <h1 id="logo">Zen</h1>
+        <nav class="row navbar navbar-expand-lg py-4">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra"
+                    aria-controls="barra" aria-expanded="false" aria-label="Botón hamburguesa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul class="menu-links navbar-nav ms-auto text-center ps-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">PLANES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid p-0 mt-5" id="carouselExampleSlidesOnly" class="carousel slide"
+        data-bs-ride="carousel">
+        <ul class="carousel-inner p-0">
+            <li class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 740px)" srcset="imagenes/main_banner_mobile.jpg" alt="postura de yoga">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="imagenes/main_banner_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="imagenes/main_banner_desktop.jpg" class="d-block w-100" alt="mujer con pose de yoga">
+                </picture>
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 740px)" srcset="imagenes/main_banner_mobile.jpg" alt="postura de yoga">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="imagenes/main_banner_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="imagenes/main_banner_desktop.jpg" class="d-block w-100" alt="...">
+                </picture>
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 740px)" srcset="imagenes/main_banner_mobile.jpg" alt="postura de yoga">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="imagenes/main_banner_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="imagenes/main_banner_desktop.jpg" class="d-block w-100" alt="...">
+                </picture>
+            </li>
+        </ul>
+    </section>
+    <section id="nosotros" class="container-fluid p-0 row justify-content-center mt-5 mb-3">
+        <h2 class="titulo col-10 mt-2 fw-bold">Nosotros</h2>
+        <p class="col-10 mb-5">
+            ¡Bienvenidos a <strong>Zen</strong>, tu refugio de bienestar integral! En Zen, creemos en la armonía
+            total entre cuerpo, mente y espíritu. Nuestra misión es ayudarte a descubrir el equilibrio en tu vida a
+            través de tres pilares fundamentales: yoga, nutrición y astrología.
+        </p>
+        <video class="col-12 p-0 m-0" autoplay="true" loop="true" controls="true" src="./videos/meditacion.mp4"></video>
+    </section>
+    <section id="planes" class="container-fluid p-0 row justify-content-center mt-4">
+        <h2 class="titulo col-10 mt-2 fw-bold">Planes</h2>
+        <div class="container-fluid row justify-content-around text-center mt-5">
+            <div class="card col-md-3 col-sm-10 p-0 mb-3">
+                <picture>
+                    <source media="(max-width:920px)" srcset="./imagenes/plan_basic_tablet.jpg" alt="postura de yoga">
+                    <img src="./imagenes/plan_basic_desktop.jpg" class="card-img-top" alt="postura de yoga">
+                </picture>
+                <div class="card-body">
+                    <h3 class="card-title">Plan basic</h3>
+                    <h4>Bienestar Inicial</h4>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+                        Saber más
+                    </button>
+                    <div class="modal fade" id="basicModal" tabindex="-1" aria-labelledby="basicModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="basicModalLabel">Plan basic</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="p-0 lista-planes">
+                                        <li>
+                                            <p class="card-text">- Acceso a clases de yoga en línea</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Recetas saludables y consejos de nutrición</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Contenido astrológico básico</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Comunidad Zen y foros de apoyo</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-3 col-sm-10 p-0 mb-3">
+                <picture>
+                    <source media="(max-width:920px)" srcset="./imagenes/plan_premium_tablet.jpg" alt="postura de yoga">
+                    <img src="./imagenes/plan_premium_desktop.jpg" class="card-img-top" alt="...">
+                </picture>
+                <div class="card-body">
+                    <h3 class="card-title">Plan premium</h3>
+                    <h4>Bienestar Completo</h4>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#premiumModal">
+                        Saber más
+                    </button>
+                    <div class="modal fade" id="premiumModal" tabindex="-1" aria-labelledby="premiumModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="premiumModalLabel">Plan premium</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="p-0 lista-planes">
+                                        <li>
+                                            <p class="card-text">- Acceso ilimitado a clases de yoga en línea
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Planes de comidas personalizados y asesoramiento
+                                                nutricional</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Lectura astrológica personalizada</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Comunidad Zen y foros de apoyo</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Descuentos exclusivos en eventos y talleres</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-3 col-sm-10 p-0 mb-3">
+                <picture>
+                    <source media="(max-width:920px)" srcset="./imagenes/plan_exclusive_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="./imagenes/plan_exclusive_desktop.jpg" class="card-img-top" alt="...">
+                </picture>
+                <div class="card-body">
+                    <h3 class="card-title">Plan exclusive</h3>
+                    <h4>Bienestar Total</h4>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exclusiveModal">
+                        Saber más
+                    </button>
+                    <div class="modal fade" id="exclusiveModal" tabindex="-1" aria-labelledby="exclusiveModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exclusiveModalLabel">Plan exclusive</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="p-0 lista-planes">
+                                        <li>
+                                            <p class="card-text">- Acceso ilimitado a clases de yoga en línea y clases
+                                                presenciales</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Planes de comidas personalizados y asesoramiento
+                                                nutricional avanzado
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Lectura astrológica personalizada y consultas
+                                                regulares</p>
+                                        </li>
+                                        <li>
+                                            <p class="card-text">- Acceso exclusivo a eventos en vivo con expertos en
+                                                bienestar</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="container-fluid p-0 row justify-content-center">
+        <h2 class="titulo col-10 mt-2 fw-bold">Servicios</h2>
+        <div class="contenedor-servicios">
+            <p>
+                En Zen, ofrecemos una gama de servicios integrales que abarcan yoga, nutrición y astrología para
+                ayudarte a alcanzar tu bienestar completo.
+                Nuestros servicios incluyen:
+            </p>
+            <div class="icono-yoga"></div>
+            <div class="servicio1">
+                <article>
+                    <h4>Yoga</h4>
+                    <a class="boton-mas" id="yoga" href="#yoga">Saber Más</a>
+
+                    <p id="yoga-texto">Consideramos el yoga como una vía para conectar contigo mismo y encontrar la paz
+                        interior. Nuestros
+                        instructores altamente capacitados te guiarán en un viaje de autoexploración a través de
+                        diferentes
+                        estilos de yoga, desde el Vinyasa dinámico hasta el relajante Yin. Sea cual sea tu nivel de
+                        experiencia, estamos aquí para ayudarte a encontrar tu espacio de tranquilidad.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/yoga_mobile.jpg" alt="postura de yoga">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/yoga_tablet.jpg"
+                        alt="postura de yoga">
+                    <img src="./imagenes/yoga_desktop.jpg" alt="postura de yoga">
+                </picture>
+            </div>
+            <div class="icono-nutricion"></div>
+            <div class="servicio2">
+                <article>
+                    <h4>Nutrición</h4>
+                    <a class="boton-mas" id="nutricion" href="#nutricion">Saber Más</a>
+                    <p id="nutricion-texto">Creemos que una alimentación consciente es esencial para tu bienestar
+                        general.
+                        Nuestros expertos en
+                        nutrición te ayudarán a descubrir cómo nutrir tu cuerpo de la manera más saludable y equilibrada
+                        posible. Desde recetas saludables y planes de comidas personalizados hasta consejos para adoptar
+                        hábitos alimenticios más saludables, estamos comprometidos a guiarte en tu viaje hacia una vida
+                        más
+                        saludable y satisfactoria.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/nutricion_mobile.jpg"
+                        alt="postura de meditacion">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/nutricion_tablet.jpg"
+                        alt="postura de meditacion">
+                    <img src="./imagenes/nutricion_desktop.jpg" alt="postura de meditacion">
+                </picture>
+            </div>
+            <div class="icono-astrologia"></div>
+            <div class="servicio3">
+                <article>
+                    <h4>Astrología</h4>
+                    <a class="boton-mas" id="astrologia" href="#astrologia">Saber Más</a>
+                    <p id="astrologia-texto">La astrología es una herramienta valiosa para comprender tu yo interior y
+                        las
+                        energías que influyen
+                        en tu vida. En Zen, nuestros astrólogos te brindarán una visión única de tu perfil astral y cómo
+                        puedes aprovechar esta sabiduría ancestral para tomar decisiones más conscientes y alineadas con
+                        tu
+                        ser interior.</p>
+                    <a class="boton-menos" href="#servicios">Ocultar</a>
+                </article>
+                <picture>
+                    <source media="(max-width: 740px)" srcset="./imagenes/astrologia_mobile.jpg" alt="carta natal">
+                    <source media="(min-width: 741px) and (max-width:920px)" srcset="./imagenes/astrologia_tablet.jpg"
+                        alt="carta natal">
+                    <img src="./imagenes/astrologia_desktop.jpg" alt="carta natal">
+                </picture>
+            </div>
+            <p>En Zen, no solo te brindamos servicios, te ofrecemos una comunidad. Creemos en el poder de la comunidad
+                para inspirar, apoyar y enriquecer nuestras vidas. Únete a nuestra familia Zen y descubre un mundo de
+                bienestar, autocuidado y autodescubrimiento.
+
+                Estamos comprometidos a ayudarte a alcanzar la armonía, la salud y la plenitud en todos los aspectos de
+                tu vida. ¡Únete a nosotros en este viaje hacia el equilibrio y la serenidad!</p>
+            <a href="#" class="button" target="_blank">
+                <input type="button" value="quiero unirme">
+            </a>
+        </div>
+    </section>
+    <div class="background">
+    </div>
+    <section id="contacto" class="container-fluid p-0 row justify-content-center mb-5 mt-5">
+        <h2 class="titulo col-10 mt-2 fw-bold">Contacto</h2>
+        <p class="text-center mt-3">¿Necesitas comunicarte con nosotros?</p>
+        <form class="row g-3 col-md-6 col-sm-10">
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+            <div class="col-12">
+                <input type="email" class="form-control" placeholder="Mail" aria-label="Mail">
+            </div>
+            <div class="col-12 text-area">
+                <textarea type="text" class="form-control" placeholder="Dejanos tu comentario" aria-label="Dejanos tu comentario"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn col-12 btn-primary">Enviar</button>
+              </div>
+        </form>
+    </section>
+    <footer>
+        <p>Canguillem Estefanía & Nardomarino Florencia</p>
+        <p>Maquetado y Desarrollo Web | Turno Tarde DMT2AV 2023</p>
+        <ul class="redes-sociales">
+            <li>
+                <a target="_blank" href="https://www.youtube.com/">
+                    <img src="./imagenes/youtube.png" alt="logo youtube">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com">
+                    <img src="./imagenes/instagram.png" alt="logo instagram">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com">
+                    <img src="./imagenes/facebook.png" alt="logo facebook">
+                </a>
+            </li>
+        </ul>
+        <p>Zen © Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
