@@ -2,15 +2,18 @@
 
 * {
     font-family: var(--main-font);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* HEADER SECTION */
 
-header{
+header {
     position: relative;
 }
 
-#logo{
+#logo {
     background: url(../imagenes/logo.svg);
     background-size: contain;
     width: 60px;
@@ -26,50 +29,92 @@ nav {
     background-color: var(--main-color);
 }
 
-#navbarNav{
+#navbarNav {
     justify-content: flex-end !important;
 }
 
-.nav-link{
+.nav-link {
     color: var(--secondary-color);
 }
 
 /* NOSOTROS SECTION */
 
-.titulo{
+.titulo {
     color: var(--main-color);
     border-bottom: 1px solid var(--secondary-color);
 }
 
 /* PLANES SECCION */
 
-.lista-planes{
+#planes {
+    margin: 0 auto;
+}
+
+.lista-planes {
     list-style: none;
+    text-align: start;
+}
+
+.lista-planes li {
+    margin: 4px 0;
+}
+
+.card-title {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.card-text {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.card-button {
+    width: 80%;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.card-button:hover {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+}
+
+.modal-header {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.modal-dialog {
+    margin-top: 25vh;
 }
 
 /* SECCION SERVICIOS */
 
-.contenedor-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.icono-yoga {
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/flor_loto.png);
 }
 
-.contenedor-servicios p {
-    width: 90%;
-    margin: 5vw auto;
+.icono-nutricion {
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/om.png);
 }
 
-.contenedor-servicios div img {
-    width: 100%;
-    margin: 15px auto;
-}
-
-.contenedor-servicios div h4 {
-    color: var(--secondary-color);
-    font-size: 32px;
-    margin: 5vw;
+.icono-astrologia {
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../imagenes/yinyang.png);
 }
 
 .boton-mas,
@@ -84,6 +129,8 @@ nav {
     margin-left: 5vw;
     max-width: 100px;
     text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
 #yoga:target {
@@ -127,63 +174,14 @@ nav {
     display: none;
 }
 
-.icono-yoga {
-    width: 100%;
-    width: 100%;
-    height: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../imagenes/flor_loto.png);
-}
-
-.icono-nutricion {
-    width: 100%;
-    width: 100%;
-    height: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../imagenes/om.png);
-}
-
-.icono-astrologia {
-    width: 100%;
-    width: 100%;
-    height: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../imagenes/yinyang.png);
-}
-
-.button {
-    width: 100%;
-    max-width: 200px;
-}
-
-.button input {
-    cursor: pointer;
-    width: 100%;
-    background-color: var(--main-color);
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+.contenedor-servicios div h4 {
     color: var(--secondary-color);
-    border: none;
-    transition: 0.5s;
-}
-
-.button input:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 14px 17px -11px #E3C08B
+    font-size: 32px;
 }
 
 /* BACKGROUND SECTION */
 
-.background{
+.background {
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -192,6 +190,21 @@ nav {
     background-position: center;
     margin-top: 30px;
     background-image: url(../imagenes/background_desktop.jpg);
+}
+
+/* CONTACTO SECTION */
+
+.btn-enviar {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.02);
+    transition: 150ms;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
 }
 
 /* FOOTER */
@@ -228,25 +241,52 @@ footer {
     transform: scale(1.3);
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px) {
     #logo {
         left: calc(50% - 40px);
     }
 
-    .menu-links{
+    .menu-links {
         margin-top: 30px;
     }
+
+    .servicio1,
+    .servicio2,
+    .servicio3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio1 figure,
+    .servicio2 figure,
+    .servicio3 figure {
+        margin-top: 10px;
+    }
+
+    .servicio1 article,
+    .servicio2 article,
+    .servicio3 article {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .background {
         background-image: url('../imagenes/background_mobile.jpg');
     }
 }
 
-@media screen and (min-width: 741px){
+@media screen and (min-width: 741px) {
+
     /* SERVICIOS SECTION */
     #yoga,
     #nutricion,
     #astrologia {
         display: none;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
     }
 
     .contenedor-servicios div p {
@@ -259,11 +299,16 @@ footer {
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .servicio1,
     .servicio3 {
         flex-direction: row-reverse;
+    }
+
+    .servicio2 {
+        flex-direction: row;
     }
 
     article {
